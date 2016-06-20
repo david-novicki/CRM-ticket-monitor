@@ -1,0 +1,26 @@
+{
+  "manifest_version": 1,
+
+  "name": "Ticket Monitor",
+  "description": "This extension checks for new tickets",
+  "version": "1.0",
+  "icons": {    
+    "16": "img/main16.png",
+    "48": "img/main48.png",
+    "128": "img/main128.png"
+  },
+
+  "permissions": [
+    "insert api url here",
+    "notifications",
+    "tabs"
+  ],
+  //"content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'",
+  "background": {
+    "scripts":  ["jquery.min.js", "background.js"]
+  },
+  "browser_action": {
+    //"default_icon": "img/favicon.ico",
+    "default_popup": "popup.html"
+  }
+}

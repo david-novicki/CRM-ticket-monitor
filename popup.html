@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .off {
+        background: none !important;
+        height: 33px !important;
+        color: White !important;
+        text-align: center !important;
+        font-weight: bold !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;  
+        background-color: #2FBDF1 !important;
+        border: 1px solid #2FBDF1 !important;
+      }
+      .on {
+        font-family: sans-serif;
+        margin-top: 10px;
+        background: none !important;
+        height: 33px !important;
+        color: White !important;
+        text-align: center !important;
+        font-weight: bold !important;
+        cursor: pointer !important;
+        border-radius: 4px !important;  
+        background-color: #F12F2F  !important;
+        border: 1px solid #F12F2F !important;
+      }
+      label {
+              font-family: sans-serif;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+  </head>
+  <body>
+      <center><label id="lblLastChk"></label></center>
+      <button id="btnSwitch" class="off"></button>
+      
+  </body>
+</html>
+
